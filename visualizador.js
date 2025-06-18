@@ -73,3 +73,12 @@ document.querySelectorAll('.format-btn').forEach(btn => {
     updatePreview();
   });
 });
+
+// Botão de limpar
+document.querySelectorAll('.clear-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const target = document.getElementById(this.dataset.target);
+    target.value = '';
+    updatePreview();
+  });
+});
