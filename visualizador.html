@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Editor Online - Teste</title>
+  <link rel="stylesheet" href="visualizador.css">
+</head>
+<body>
+  <div class="editor-container">
+    <div class="editor">
+      <div class="editor-header">
+        <label for="html">HTML</label>
+        <button type="button" class="format-btn" data-target="html" title="Formatar HTML">🧹</button>
+      </div>
+      <textarea id="html" placeholder="<h1>Olá Mundo</h1>"></textarea>
+    </div>
+    <div class="editor">
+      <div class="editor-header">
+        <label for="css">CSS</label>
+        <button type="button" class="format-btn" data-target="css" title="Formatar CSS">🧹</button>
+      </div>
+      <textarea id="css" placeholder="body { background: lightyellow; }"></textarea>
+    </div>
+    <div class="editor">
+      <div class="editor-header">
+        <label for="js">JavaScript</label>
+        <button type="button" class="format-btn" data-target="js" title="Formatar JavaScript">🧹</button>
+      </div>
+      <textarea id="js" placeholder="console.log('Olá Mundo')"></textarea>
+    </div>
+  </div>
+
+  <div class="output-container">
+    <iframe id="preview"></iframe>
+  </div>
+
+  <script src="visualizador.js"></script>
+</body>
+</html>
